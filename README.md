@@ -2,12 +2,14 @@
 
 A WebGL-based vector display engine for creating retro CRT-style phosphor graphics in the browser.
 
-[![Asteroids Demo](videos/asteroids.webp)](https://github.com/blucz/vectordisplay/blob/main/videos/asteroids.mp4?raw=1)
-
-       
 This JavaScript library is a port and continuation of my earlier C-based OpenGL vector display engine from [github.com/blucz/Vector](https://github.com/blucz/Vector), bringing the same authentic CRT phosphor simulation to web browsers.
 
 For this to feel awesome, you really need a display with good blacks and a lot of dynamic range. It works great on all Apple displays from the past 5 years. It works OK on my 3 year old Dell monitor. It works meh on my 6 year old Dell Monitor. 
+
+## Asteroids Demo
+
+[![Asteroids Demo](videos/asteroids.webp)](https://github.com/blucz/vectordisplay/blob/main/videos/asteroids.mp4?raw=1)
+
 
 ## Features
 
