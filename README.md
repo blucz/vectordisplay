@@ -2,7 +2,9 @@
 
 A WebGL-based vector display engine for creating retro CRT-style phosphor graphics in the browser.
 
-This JavaScript library is a port and continuation of my earlier C++ OpenGL vector display engine from [github.com/blucz/Vector](https://github.com/blucz/Vector), bringing the same authentic CRT phosphor simulation to web browsers.
+This JavaScript library is a port and continuation of my earlier C-based OpenGL vector display engine from [github.com/blucz/Vector](https://github.com/blucz/Vector), bringing the same authentic CRT phosphor simulation to web browsers.
+
+For this to feel awesome, you really need a display with good blacks and a lot of dynamic range. It works great on all Apple displays from the past 5 years. It works OK on my 3 year old Dell monitor. It works meh on my 6 year old Dell Monitor. 
 
 ## Features
 
@@ -11,7 +13,6 @@ This JavaScript library is a port and continuation of my earlier C++ OpenGL vect
 - **Configurable Display Parameters**: Adjust brightness, decay, and persistence
 - **Vector Font Support**: Built-in Hershey Simplex vector font for text rendering
 - **Shape Primitives**: Lines, circles, boxes, and other vector shapes
-- **Transform Support**: Scale and translate your coordinate system
 
 ## Installation
 
@@ -130,6 +131,7 @@ console.log(metrics.width, metrics.height);
 The repository includes two demo applications:
 
 ### Basic Demo
+
 A test pattern and bouncing animation demonstrating the display capabilities.
 
 ```bash
@@ -139,7 +141,10 @@ npm run dev
 ```
 
 ### Asteroids Game
-A full implementation of the classic Asteroids arcade game.
+
+An implementation of the classic Asteroids arcade game built using Vector and Claude Code in about an hour. 
+
+You can play this at [vectoroids.blucz.com](https://vectoroids.blucz.com).
 
 ```bash
 cd demos/asteroids
@@ -163,18 +168,13 @@ This will create:
 
 ## Browser Support
 
-Requires a browser with WebGL support. Tested on:
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+Requires a browser with WebGL support.
 
 ## Credits
 
-This JavaScript implementation is based on my earlier C++ vector display engine:
-- Original C++ engine: [github.com/blucz/Vector](https://github.com/blucz/Vector)
+This project is a Javascript port of an vector display engine that I built using C in 2012.
 
-The vector display technique simulates the phosphor persistence effects of vintage CRT displays, creating the distinctive glowing trail effect characteristic of vector displays and oscilloscopes.
+- Original C++ engine: [github.com/blucz/Vector](https://github.com/blucz/Vector)
 
 ## License
 
