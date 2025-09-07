@@ -1,0 +1,40 @@
+{
+  "name": "vector-display",
+  "version": "1.0.0",
+  "description": "WebGL-based vector display engine for creating retro CRT-style graphics",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"No tests specified\" && exit 0",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "webgl",
+    "vector",
+    "graphics",
+    "display",
+    "retro",
+    "crt",
+    "phosphor",
+    "visualization"
+  ],
+  "author": "Brian Luczkiewicz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blucz/vectordisplay"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.9.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.3.3"
+  }
+}
